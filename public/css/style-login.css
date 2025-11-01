@@ -1,0 +1,110 @@
+main {
+    position: relative;
+}
+
+#intro, #agendar {
+    background-image: none;
+    height: fit-content;
+    background-color: white;
+    padding: 0;
+    -webkit-box-shadow:  0 0 10px #e6f7e6, 0 0 25px #e6f7e6; 
+    box-shadow: 0 0 10px #e6f7e6, 0 0 25px #e6f7e6;
+    position: static;
+}
+
+
+#intro aside {
+    display: flex;
+    background-color: #c7f5d8;
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+}
+
+#intro aside .menu-toggle a {
+    color: black;
+}
+
+
+
+form h1 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 80vw;
+    height: fit-content;
+}
+
+
+form button {
+    background-color: #56cca5c4;
+    margin: 40px auto ;
+}
+
+#intro aside  a {
+    color: white;
+    padding: 0;
+}
+
+#intro aside  a:hover {
+    border-bottom: 3px solid black;
+    border-radius: 4px;
+}
+
+#recuperarSenha {
+    font-size: 1rem;
+    text-align: right;
+    text-decoration: underline;
+    font-weight: 600;
+    padding-top: 25px;
+}
+
+
+@media (min-width: 350px) {
+    form {
+        max-width: 80vw;
+        padding: 4rem;
+
+    }
+    #intro aside {
+        flex-direction: row;
+    }
+    #intro img.logo {
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 700px) {
+    form {
+        max-width: 50vw;
+    }
+
+    form button {
+        width: 200px;
+    }
+    
+}
+
+@media  (min-width: 900px) {
+  .menu-toggle {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    position: static;
+    backdrop-filter: none;
+    padding: 0;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1072px) {
+    #intro aside {
+        padding: 2rem 10vw;
+    }
+}

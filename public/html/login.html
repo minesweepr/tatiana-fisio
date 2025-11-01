@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dra. Tatiana Fernandes Fisioterapeuta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='../css/style-base.css'>
+    <link rel="stylesheet" href='../css/style-consulta.css'>
+    <link rel="stylesheet" href='../css/style-footer.css'>
+    <link rel="stylesheet" href='../css/style-login.css'>
+
+    <script src="https://kit.fontawesome.com/86b61fdc16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <main>
+        <section id="intro">
+            <aside>
+                <img class="logo" src="../src/logo.svg" alt="Logo">
+                <nav class="navbar">
+                    <button class="menu-btn" onclick="AcionarMenu()"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+                    <ul class="menu menu-toggle">
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./consulta.html">Agendar</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+
+        <section id="agendar">
+            <form action="">
+                <h1>Login</h1>
+
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="senha">senha</label>
+                <input type="text" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit">Entrar</button>
+
+                <span id="recuperarSenha">esqueci a senha</span>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section>
+            <img class="logo" src="../src/logo.svg" alt="Logo">
+            <p>Seu corpo merece cuidado, atenção e movimento sem limites.</p>
+            <aside>
+                <a href="https://wa.me/5521964156474" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/tatianafernandesfisio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </aside>
+        </section>
+        <section class="sec-outros">
+            <h1>NAVEGAÇÃO</h1>
+            <h2><a href="#intro">HOME</a></h2>
+            <h2><a href="#sobre">QUEM SOMOS</a></h2>
+            <h2><a href="#serv">SERVIÇOS</a></h2>
+            <h2><a href="#galeria">PROFISSIONAL</a></h2>
+            <h2><a href="#avaliacoes">AVALIAÇÕES</a></h2>
+           
+        </section>
+        <section class="sec-outros">
+            <h1>CONTATOS</h1>
+            <h2> Rua Carumbé, 416 - Loja C - Realengo <br>Rio de Janeiro - RJ <br>21755-140</h2>
+            <h2>(21) 96415-6474</h2>
+            
+        </section>
+        <section>
+            <h1>GALERIA</h1>
+
+            <section id="footer-galeria" class="galeria-insta">
+
+            </section>
+        </section>
+
+        <p style="opacity: 60%; text-align: center;">© 2025 Tatiana Fernandes. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/client-menu.js"></script>
+    <script src="../js/insta.js"></script>
+</body>
+</html>

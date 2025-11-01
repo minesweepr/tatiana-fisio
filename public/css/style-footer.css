@@ -1,0 +1,162 @@
+footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+footer > section:first-of-type {
+  max-width: 240px;
+} 
+
+footer section:first-of-type img {
+  margin: 0 auto;
+}
+
+.sec-outros {
+  max-width: 65vw;
+}
+
+footer a:not(h2 a), footer a img {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  padding: 0;
+}
+
+footer a:not(h2 a) {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+footer aside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+footer h1, footer p {
+  font-size: 20px;
+  
+}
+footer h2 {
+  font-size: 18px;
+}
+
+footer h2:hover {
+    transform: scale(1.02);
+    text-decoration: underline;
+    opacity: 1;
+}
+
+footer h2 a {
+  background-color: transparent;
+  padding: 0;
+  white-space: nowrap;
+
+}
+
+/* Mobile First */
+#footer-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas sempre */
+  grid-template-rows: repeat(2, auto);   /* 2 linhas */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  max-width: 432px;
+  margin-bottom: 30px;
+}
+
+#footer-galeria section {
+  width: 100%;
+  max-width: 205px;
+  min-width: 60px;
+  max-height: 266px;
+  min-height: 99px;
+  background-color: #ccc; 
+  border-radius: 18px;
+  margin: 0;
+}
+
+#footer-galeria a, #footer-galeria a img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: inherit;
+
+}
+
+#footer-galeria img.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ocupa tudo, mantendo proporção */
+    display: block;
+}
+
+@media (min-width: 839px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    overflow-wrap: break-word;
+    position: relative;
+    justify-content: space-evenly;
+    padding-bottom: 6rem;
+  }
+
+  footer h1, footer p {
+    font-size: 1.2rem;
+    
+  }
+  footer h2 {
+    font-size: 1.2rem;
+  }
+
+
+
+  footer > p {
+      position: absolute;
+      bottom: 10px;
+  }
+
+  footer > section:last-of-type {
+    max-width: 245px;
+  } 
+
+  footer a, footer a img {
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+  }
+
+  #footer-galeria {
+    grid-template-rows: repeat(2, 1fr);
+      max-height: 50%;
+      margin: 0 auto;
+  }
+
+  #footer-galeria > section {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+  }
+
+  .sec-outros {
+    max-width: 124px;
+  }
+}
+
+@media (min-width: 1072px) {
+  footer > section:last-of-type {
+    max-width: 300px;
+  }
+}

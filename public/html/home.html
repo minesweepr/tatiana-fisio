@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dra. Tatiana Fernandes Fisioterapeuta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='../css/style-home.css'>
+    <link rel='stylesheet' href='../css/style-base.css'>
+    <link rel="stylesheet" href='../css/style-footer.css'>
+    <script src="https://kit.fontawesome.com/86b61fdc16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <main>
+        <section id="intro">
+            <aside>
+                <img class="logo" src="../src/logo.svg" alt="Logo">
+                <nav class="navbar">
+                    <button class="menu-btn" onclick="AcionarMenu()"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+                    <ul class="menu menu-toggle">
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#sobre">Quem Somos</a></li>
+                        <li><a href="#serv">Serviços</a></li>
+                        <li><a href="#footer">Contato</a></li>
+                        <li><button ><a href="./login.html">Login</a></button></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <h1>Acolhedora e Profissional</h1>
+            <p>
+                Seu corpo merece cuidado, atenção e movimento
+                sem limites.
+                <br>
+                A fisioterapia vai além do tratamento:
+                é sobre cuidar de você, com segurança, dedicação
+                e resultados reais.
+            </p>
+
+            <a href="./consulta.html">Agende <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a>
+        </section>
+
+        <section id="sobre">
+            <img class="banner" style="object-position: top; object-fit: contain;" src="../src/tatiana.jpg" alt="foto da doutora Tatiana Fernandes">
+           
+            <section>
+                <span class="marcador">Quem Somos</span>
+                <h1>Meu Jeito de Cuidar</h1>
+                <p>
+                    Sou Tatiana Fernandes, fisioterapeuta dedicada
+                    a cuidar de cada paciente de forma única.
+                    Atendo principalmente crianças e idosos, 
+                    no consultório em Realengo ou em domicílio,
+                    quando necessário. Acredito que a fisioterapia
+                    é mais do que tratar dores: é sobre acolher, 
+                    ouvir e ajudar você a recuperar sua qualidade de vida.
+                </p>
+                <a href="https://wa.me/5521964156474">Saiba mais</a>
+            </section>
+        </section>   
+        
+        <section id="serv">
+            <span class="marcador">Serviços</span>
+            <h1>Confira</h1>
+            <!-- slide img-->
+
+            <section id="slide2"  class="slide-serv">
+
+                <!--Se as imgs forem pro banco de dados
+                foreach(
+                 \\o primeiro é ativo, os outros nao
+                    <section>
+                        <img src="link" alt="alt"/>
+                        <h2>texto</h2>
+                    </section>
+                )-->
+
+                <section>
+                    <img src="../src/pulmao.svg" alt="pulmão humano"/>
+                    <h2>RESPIRATÓRIO</h2>
+                </section>
+                <section>
+                    <img src="../src/cerebro.svg" alt="cérebro humano"/>
+                    <h2>ATRASO MOTOR</h2>
+                </section>
+                <section>
+                    <img src="../src/crianca.svg" alt="criança"/>
+                    <h2>0 A 3 ANOS</h2>
+                </section>
+            </section>
+
+            <nav class="dots">
+                 <button class="dot" data-indice="0">
+                    <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                </button>
+                <button class="dot" data-indice="1">
+                  <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                </button>
+                <button class="dot" data-indice="2">
+                    <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                </button>   
+            </nav>
+        </section>
+
+        <section id="galeria">
+            <span class="marcador">Galeria</span>
+            <h1>CHEQUE NOSSO INSTAGRAM</h1>
+            <!-- slide img modificavel caso venha api-->
+            <section id="slide2" class="galeria-insta slide-serv" >
+                
+            </section>
+
+            <nav class="dots">
+                 <button class="dot" data-indice="0">
+                    <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                </button>
+                <button class="dot" data-indice="1">
+                  <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                </button>
+                <button class="dot" data-indice="2">
+                    <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                </button>   
+            </nav>
+            
+
+        </section>
+
+        <section id="avaliacoes">
+            <article>
+                <span class="marcador">Avaliações</span>
+                <h3>AVALIAÇÕES DOS CLIENTES</h3>
+                <p style="text-align: justify; opacity: 0.7;">
+                    “Fisioterapia significa qualidade de vida. 
+                    E essa profissional realizou a volta dos meu
+                    movimentos pós AVC. Eu só tenho agradecer ao seu 
+                    trabalho, dedicação e paciência que teve no meu tratamento.
+                    Desde já,  muito obrigado Doutora Tatiana Fernandes.”
+                </p>
+                <section id="cliente-avaliacao">
+                    <section>
+                        <div></div>
+                        <span class="maiusculo">RODRIGO PLÁCIDO</span>
+                    </section>
+                    <span id="nota" style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+
+                </section>
+                
+                <!-- <nav class="dots">
+                    <button style="font-size: 30px;"><i class="fa-solid fa-left-long" style="color: #000000;"></i></button>
+                    <button style="font-size: 30px;"><i class="fa-solid fa-right-long" style="color: #000000;"></i></button>
+                </nav> -->
+            </article>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <section>
+            <img class="logo" src="../src/logo.svg" alt="Logo">
+            <p>Seu corpo merece cuidado, atenção e movimento sem limites.</p>
+            <aside>
+                <a href="https://wa.me/5521964156474" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/tatianafernandesfisio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </aside>
+        </section>
+        <section class="sec-outros">
+            <h1>NAVEGAÇÃO</h1>
+            <h2><a href="#intro">HOME</a></h2>
+            <h2><a href="#sobre">QUEM SOMOS</a></h2>
+            <h2><a href="#serv">SERVIÇOS</a></h2>
+            <h2><a href="#galeria">PROFISSIONAL</a></h2>
+            <h2><a href="#avaliacoes">AVALIAÇÕES</a></h2>
+           
+        </section>
+        <section class="sec-outros">
+            <h1>CONTATOS</h1>
+            <h2> Rua Carumbé, 416 - Loja C - Realengo <br>Rio de Janeiro - RJ <br>21755-140</h2>
+            <h2>(21) 96415-6474</h2>
+            
+        </section>
+        <section>
+            <h1>GALERIA</h1>
+
+            <section id="footer-galeria" class="galeria-insta">
+
+            </section>
+        </section>
+
+        <p style="opacity: 60%; text-align: center;">© 2025 Tatiana Fernandes. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/client-menu.js"></script>
+    <script src="../js/insta.js"></script>
+    <script src="../js/slide.js"></script>
+</body>
+</html>

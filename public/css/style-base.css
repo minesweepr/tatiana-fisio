@@ -1,0 +1,383 @@
+:root {
+  --color-primary: #F4FFF4;
+  --color-secondary: #66B9B1;
+  --color-slide-bg: #199C8E;
+  --color-footer-bg: #21383D;
+  --color-menu-bg: rgba(0, 7, 6, 0.45);
+  --color-title: #26505E;
+  --font-title: "Merriweather", "Lato", sans-serif;
+  --font-principal: "Lato", "Montserrat", sans-serif;
+  --color-black: #000000;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-principal);
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding: 2rem auto;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  font-size: 16px;
+
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+  font-family: var(--font-title);
+  font-weight: 400;
+
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*fim do reset geral*/
+
+
+h2 {
+  margin: 29px 0;
+  opacity: 70%;
+
+}
+
+button, a {
+  border-radius: 30px;
+  border: none;
+  background-color: var(--color-slide-bg);
+  width: fit-content;
+  min-width: 55px;
+  padding: 14px 20px;
+  margin: 29px 0;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+ div {
+  max-width: 360px;
+}
+
+#intro, #sobre, #serv, #galeria, #avaliacoes, footer, #agendar {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+#intro {
+  position: relative;
+}
+
+.logo {
+width: clamp(13rem, 30vw, 18rem);
+min-width: 196px;
+height: auto;
+display: block;    
+}
+
+li {
+  list-style: none;
+  border-bottom:  2px solid #b8b2a875;
+}
+
+li a, li button {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+li a {
+  margin: 15px;
+  
+}
+
+img {
+  border-radius: 30px;
+  object-position: center;
+}
+
+/* btn e menu nav  */
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--color-menu-bg);
+  margin: 0;
+  padding: 2rem 1.6rem;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  
+}
+
+button.btn-toggle {
+  z-index: 5;
+  right: 15px;
+  /* right: auto;
+  bottom: auto; */
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: transparent;
+  color: var(--color-primary);
+  margin: 10px;
+  
+  
+}
+
+.menu-btn {
+  background-color: var(--color-primary);
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 29px 44px;
+  transition: opacity 0.2s ease;
+
+}
+
+
+/* Insta galeria e slide  */
+
+.galeria-insta a, .galeria-insta img {
+  padding: 0;
+  margin: 0;
+}
+
+section.galeria-insta section {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 300px;
+  
+
+}
+
+.galeria-insta section img.banner {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+
+  height: auto;
+  transition: transform 0.3s ease;
+
+}
+
+/* Overlay cinza */
+.galeria-insta section::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 495px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.219);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Ícone centralizado */
+.galeria-insta section i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  color: white;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* não atrapalha clique */
+  z-index: 2;
+}
+
+.galeria-insta section:hover::after {
+  opacity: 1;
+}
+
+.galeria-insta section:hover img.banner {
+  transform: scale(1.02);
+}
+
+.galeria-insta section:hover i {
+  opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+    input, select, button {
+    padding: 0.6rem;
+    }
+
+    footer:not() {
+        flex-direction: column;
+    }
+
+}
+
+/* >=353px até 900px */
+@media (min-width: 353px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+
+  #sobre, #serv, #galeria, #avaliacoes, footer, #agendar {
+    padding: 4rem;
+  }
+}
+
+/* >=600px */
+@media (min-width: 600px) {
+  .slide-serv section {
+    flex: 0 0 50%;
+  }
+}
+
+/* >=630px */
+@media (min-width: 630px) {
+  #intro {
+    background: 
+      linear-gradient(
+        rgba(102, 185, 177, 0),
+        rgba(102, 185, 177, 0.548),
+        rgba(102, 185, 177, 0.11)
+      ),
+      url("../src/home-bg.png") right / cover no-repeat;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+
+  h1 {
+    white-space: nowrap;
+  }
+
+  .menu-btn  {
+    font-size: 1rem;
+    
+  }
+}
+
+/* >=726px */
+@media (min-width: 726px) {
+  #sobre {
+    padding: 4rem;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+/* >=782px */
+@media (min-width: 782px) {
+  #serv img {
+    max-width: 232px;
+  }
+}
+
+@media (min-width: 839px) {
+  body {
+    font-size: 20px;
+  }
+
+  li a, li button {
+    background-color: transparent;
+  }
+
+  li a {
+    margin: 15px;
+    padding: 10px;
+    
+  }
+  
+  
+
+  .slide-serv:not(.galeria-insta) {
+      gap: 0;
+  }
+}
+
+/* >=900px */
+@media (min-width: 900px) {
+  .slide-serv section {
+    flex: 0 0 33.33%;
+  }
+
+  li {
+    border: none;
+  }
+  
+  li button {
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 40px;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    position: static;
+    backdrop-filter: none;
+    padding: 0;
+    gap: 30px;
+    align-items: center;
+  }
+
+  button.menu-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1072px) {
+  body {
+    font-size: 2rem;
+  }
+
+  #galeria .slide-serv section {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    margin-top: 40px;
+  }
+
+  #galeria .dots {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 32px;
+  }
+}

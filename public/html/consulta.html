@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dra. Tatiana Fernandes Fisioterapeuta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='../css/style-home.css'>
+    <link rel='stylesheet' href='../css/style-base.css'>
+    <link rel="stylesheet" href='../css/style-footer.css'>
+    <link rel='stylesheet' href='../css/style-consulta.css'>
+    <script src="https://kit.fontawesome.com/86b61fdc16.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <main>
+        <section id="intro">
+            <aside>
+                <img class="logo" src="../src/logo.svg" alt="Logo">
+                <nav class="navbar">
+                    <button class="menu-btn" onclick="AcionarMenu()"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+                    <ul class="menu menu-toggle">
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="#agendar">Agendar</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <h1>Acolhedora e Profissional</h1>
+            <p>
+                Seu corpo merece cuidado, atenção e movimento
+                sem limites.
+                <br>
+                A fisioterapia vai além do tratamento:
+                é sobre cuidar de você, com segurança, dedicação
+                e resultados reais.
+            </p>
+
+            <a href="./home.html">Voltar a Página Inicial<i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a>
+        </section>
+
+        <section id="agendar">
+            <form action="">
+                <h1>Agende Sua Consulta</h1>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+                <label for="especialidade">Especialidade</label>
+                <select id="especialidade" name="especialidade" required>
+                    <option value="">Selecione</option>
+                    <option value="fisioterapia">Fisioterapia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="odontologia">Odontologia</option>
+                </select>
+
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="submit">Solicitar Consulta</button>
+            </form>
+        
+        
+        <section class="info-card">
+            <span><i class="fa-solid fa-phone"></i> Nosso Contato!</span>
+            <p>(21) 96415-6474</p>
+        </section>
+        <section class="info-card">
+            <span> <i class="fa-solid fa-clock"></i> Horário de Funcionamento</span>
+            <p>Seg - Sex: <br>
+                07:00 as 18:00 </p>
+        </section>
+
+        </section> 
+    </main>
+
+    <footer id="footer">
+        <section>
+            <img class="logo" src="../src/logo.svg" alt="Logo">
+            <p>Seu corpo merece cuidado, atenção e movimento sem limites.</p>
+            <aside>
+                <a href="https://wa.me/5521964156474" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/tatianafernandesfisio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </aside>
+        </section>
+        <section class="sec-outros">
+            <h1>NAVEGAÇÃO</h1>
+            <h2><a href="#intro">HOME</a></h2>
+            <h2><a href="#sobre">QUEM SOMOS</a></h2>
+            <h2><a href="#serv">SERVIÇOS</a></h2>
+            <h2><a href="#galeria">PROFISSIONAL</a></h2>
+            <h2><a href="#avaliacoes">AVALIAÇÕES</a></h2>
+           
+        </section>
+        <section class="sec-outros">
+            <h1>CONTATOS</h1>
+            <h2> Rua Carumbé, 416 - Loja C - Realengo <br>Rio de Janeiro - RJ <br>21755-140</h2>
+            <h2>(21) 96415-6474</h2>
+            
+        </section>
+        <section>
+            <h1>GALERIA</h1>
+
+            <section id="footer-galeria" class="galeria-insta">
+
+            </section>
+        </section>
+
+        <p style="opacity: 60%; text-align: center;">© 2025 Tatiana Fernandes. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/client-menu.js"></script>
+    <script src="../js/insta.js"></script>
+</body>
+</html>
