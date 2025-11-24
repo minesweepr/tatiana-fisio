@@ -6,6 +6,8 @@
     <title>Sistema Administrador Fisioterapia</title>
     
     <link rel="stylesheet" href="../css/style_geral.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/86b61fdc16.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,17 +35,65 @@
         <article class="bg-br indicador-nav">
           <p><i class="fa-solid fa-chart-line"></i> Dashboard</p>
         </article>
+
         <main>
-          <!--
-          thiago, essa parte aq é sua: https://scriptdev.com.br/como-criar-um-painel-de-administracao-em-php-com-bootstrap-5-um-guia-amigavel-para-desenvolvedores/
-          eu não vejo muito oq fzer assim sem vc criar o banco, php, etc. já que parece majoritariamente ser só copiar e colar, acho que você pode fazer
-          qualquer coisa me manda DM que eu te ajudo. se nao for, me chama q eu faço
-          -->
+        <section class="ctopo">
+            <div class="bg-br">
+                <p>Clientes</p>
+                <h2 id="totalClientes">0</h2>
+            </div>
+          
+            <div class="bg-br">
+                <p>Clientes Ativos</p>
+                <h2 id="clientesAtivos">0</h2>
+            </div>
+          
+            <div class="bg-br">
+                <p>Fechamentos Próx. Semana</p>
+                <h2 id="fechamentosSemana">0</h2>
+            </div>
+        </section>
+
+        <section class="graficos">
+            <div class="bg-br">
+                <h3>Tipos de Consultas</h3>
+                <canvas id="graficoPizza"></canvas>
+            </div>
+          
+            <div class="bg-br">
+                <h3>Consultas por Dia</h3>
+                <canvas id="graficoBarra"></canvas>
+            </div>
+        </section>
+
+        <section class="listas">
+            <div class="bg-br">
+                <h3>Consultas Recentes</h3>
+                <!--assim q deve ficar-->
+                <ul id="consultasRecentes">
+                  <!--exemplo ativo-->
+                  <li>tipo de consulta<span class="status-ativo">ativo</span></li>
+                  <!--exemplo inativo-->
+                  <li>tipo de consulta<span class="status-inativo">inativo</span></li>
+                </ul>
+                
+            </div>
+          
+            <div class="bg-br">
+                <h3>Clientes Recentes</h3>
+                <!--assim q deve ficar-->
+                <ul id="clientesRecentes">
+                  <!--exemplo-->
+                  <li>nome da silva<a href="clientes.html?id=[ID AQ]" class="ver-mais">ver mais</a></li>
+                </ul>
+            </div>
+        </section>
         </main>
       </div>
     </article>
 
     <div class="overlay" id="overlay"></div>
     <script src="../js/menu.js"></script>
+    <script src="../js/graficos.js"></script>
 </body>
 </html>
