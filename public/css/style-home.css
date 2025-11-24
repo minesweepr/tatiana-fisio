@@ -178,6 +178,7 @@ article {
   border-radius: 20px;
   padding: 30px 33px;
   height: fit-content;
+  max-height: 608px;
   min-height: 475px;
   font-size: 19px;
   max-width: 900px;

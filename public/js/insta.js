@@ -2,10 +2,10 @@
 // com api, isso será substituido por um json ??
 const dados = {
   banners: [
-    { link: "https://www.instagram.com/p/DN3siA7Qjjs/", img: "../src/galeria-img/a.jpg" },
-    { link: "https://www.instagram.com/p/DN6Pwr8ASSx/", img: "../src/galeria-img/b.jpg" },
-    { link: "https://www.instagram.com/p/DN-8XfADb4Y/", img: "../src/galeria-img/c.jpg" },
-    { link: "https://www.instagram.com/p/DPv75xDDRGg/", img: "../src/galeria-img/d.jpg" }
+    { link: "https://www.instagram.com/p/DPXCULsiWw7/", img: "https://file.garden/aSTP81QTr1Qzar74/img6.PNG" },
+    { link: "https://www.instagram.com/p/DRSQqfuEQzm/", img: "https://file.garden/aSTP81QTr1Qzar74/img1.PNG" },
+    { link: "https://www.instagram.com/p/DRU-M2gCcea/", img: "https://file.garden/aSTP81QTr1Qzar74/img2.PNG" },
+    { link: "https://www.instagram.com/p/DPv75xDDRGg/", img: "https://file.garden/aSTP81QTr1Qzar74/img4.PNG" }
   ]
 };
 
