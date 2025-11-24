@@ -45,7 +45,7 @@
         </section>
 
         <section id="agendar">
-            <form action="">
+            <form action="" >
                 <h1>Agende Sua Consulta</h1>
 
                 <label for="nome">Nome</label>
@@ -57,21 +57,16 @@
                 <label for="telefone">Telefone</label>
                 <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
 
-                <label for="especialidade">Especialidade</label>
-                <select id="especialidade" name="especialidade" required>
-                    <option value="">Selecione</option>
-                    <option value="fisioterapia">Fisioterapia</option>
-                    <option value="dermatologia">Dermatologia</option>
-                    <option value="odontologia">Odontologia</option>
-                </select>
+                <label for="motivo">Motivo da Consulta</label>
+                <textarea style="resize: none;" id="motivo" name="motivo" rows="4" placeholder="Qual é o motivo da sua consulta?" required></textarea>
 
-                <label for="data">Data</label>
+                <label for="data">Data desejada</label>
                 <input type="date" id="data" name="data" required>
 
-                <label for="hora">Hora</label>
+                <label for="hora">Hora preferencial</label>
                 <input type="time" id="hora" name="hora" required>
 
-                <button type="submit">Solicitar Consulta</button>
+                <button type="button" onclick="enviarWhatsApp('5521964156474')">Solicitar Consulta</button>
             </form>
         
         
@@ -123,6 +118,7 @@
         <p style="opacity: 60%; text-align: center;">© 2025 Tatiana Fernandes. All rights reserved.</p>
     </footer>
 
+    <script src="../js/agendamento.js"></script>
     <script src="../js/client-menu.js"></script>
     <script src="../js/insta.js"></script>
 </body>

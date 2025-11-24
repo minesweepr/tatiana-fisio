@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #F4FFF4;
+  --color-primary: rgb(244, 255, 244);
   --color-secondary: #66B9B1;
   --color-slide-bg: #199C8E;
   --color-footer-bg: #21383D;
@@ -145,7 +145,7 @@ button.btn-toggle {
   background-color: transparent;
   color: var(--color-primary);
   margin: 10px;
-  
+  transform: rotate(180deg);
   
 }
 
@@ -159,7 +159,7 @@ button.btn-toggle {
   top: 0;
   margin: 29px 44px;
   transition: opacity 0.2s ease;
-
+  transition: transform 0.3s ease;
 }
 
 
@@ -175,15 +175,15 @@ section.galeria-insta section {
   display: inline-block;
   overflow: hidden;
   cursor: pointer;
-  max-width: 300px;
-  
-
+  max-width: 250px;
+  width: 250px;
 }
 
-.galeria-insta section img.banner {
+.galeria-insta section a img {
   display: block;
   width: 100%;
   max-width: 300px;
+  object-fit: cover;  
 
   height: auto;
   transition: transform 0.3s ease;
@@ -363,21 +363,21 @@ section.galeria-insta section {
     font-size: 2rem;
   }
 
-  #galeria .slide-serv section {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: visible;
-    margin-top: 40px;
-  }
-
   #galeria .dots {
     visibility: hidden;
     pointer-events: none;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 1200px) {
   body {
     font-size: 32px;
+  }
+
+  #galeria .slide-serv section {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
   }
 }
