@@ -18,9 +18,6 @@ if ($res->num_rows > 0) {
                 <button class='editar' onclick=\"window.location.href='alterar_dia_de_fechamento.html?id={$h['id']}'\">
                     <i class='fa-solid fa-pen-to-square'></i>
                 </button>
-                <button class='excluir' onclick='excluirHorario({$h['id']})'>
-                    <i class='fa-solid fa-trash-can'></i>
-                </button>
             </td>
         </tr>";
     }

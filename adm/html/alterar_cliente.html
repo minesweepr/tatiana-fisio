@@ -10,51 +10,71 @@
     <script src="https://kit.fontawesome.com/86b61fdc16.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-      <h1>SIS.adm</h1>
-      <button class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
-    </header>
 
-    <article class="container">
-      <nav class="menu" id="menu">
-        <ul>
-          <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i></i> Dashboard</a></li>
-          <li><a href="clientes.html"><i class="fa-solid fa-users"></i> Clientes</a></li>
-          <li><a href="dias_de_fechamento.html"><i class="fa-solid fa-calendar-days"></i> Dias de Fechamento</a></li>
-          <li><a href="../../public/html/home.html"><i class="fa-solid fa-right-from-bracket"></i></i> Sair</a></li>
-        </ul>
+<header>
+  <h1>SIS.adm</h1>
+  <button class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+</header>
 
-        <section class="usuario">
-          <div class="avatar"><i class="fa-solid fa-web-awesome"></i></div>
-          <p>Logado como<br><span class="bold">ADM</span></p>
-        </section>
-      </nav>
+<article class="container">
+  <nav class="menu" id="menu">
+    <ul>
+      <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+      <li><a href="clientes.html"><i class="fa-solid fa-users"></i> Clientes</a></li>
+      <li><a href="horario_de_funcionamento.html"><i class="fa-solid fa-calendar-days"></i> Horário de Funcionamento</a></li>
+      <li><a href="../../public/html/home.html"><i class="fa-solid fa-right-from-bracket"></i> Sair</a></li>
+    </ul>
 
-      <div class="conteudo">
-        <article class="bg-br indicador-nav">
-          <p><i class="fa-solid fa-users"></i> Clientes > Alterar Cliente</p>
-        </article>
-        <main>
-          <form action="" method="POST" class="bg-br">
-              <label for="nome">
-                  Nome: <input type="text" name="nome" id="nome">
-              </label>
-              <section class="agrupado">
-                <label for="data">
-                    Data: <input type="date" name="data" id="data">
-                </label>
-                <label for="hora">
-                    Hora: <input type="time" name="hora" id="hora">
-                </label>
-              </section>
-              <!--TODO: preferencialmente, faz aquilo que ja aparece as informações no input field-->
-              <button type="button" class="btn" onclick="">Alterar Cliente</button>
-          </form>
-        </main>
-      </div>
+    <section class="usuario">
+      <div class="avatar"><i class="fa-solid fa-web-awesome"></i></div>
+      <p>Logado como<br><span class="bold">ADM</span></p>
+    </section>
+  </nav>
+
+  <div class="conteudo">
+    <article class="bg-br indicador-nav">
+      <p><i class="fa-solid fa-users"></i> Clientes > Alterar Cliente</p>
     </article>
 
-    <div class="overlay" id="overlay"></div>
-    <script src="../js/menu.js"></script>
+    <main>
+      <form id="form-alterar" class="bg-br">
+    <label for="nome">
+      Nome:
+      <input type="text" name="nome" id="nome" required>
+    </label>
+
+    <section class="agrupado">
+      <label for="data">
+        Data:
+        <input type="date" name="data" id="data" required>
+      </label>
+
+      <label for="hora">
+        Hora:
+        <input type="time" name="hora" id="hora" required>
+      </label>
+    </section>
+
+    <label for="status">
+      Status:
+      <select id="status" name="status">
+        <option value="1">Ativo</option>
+        <option value="0">Inativo</option>
+      </select>
+    </label>
+
+    <button type="button" class="btn" onclick="alterarCliente()">Alterar Cliente</button>
+</form>
+
+
+
+    </main>
+  </div>
+</article>
+
+<div class="overlay" id="overlay"></div>
+
+<script src="../js/menu.js"></script>
+<script src="../js/alterar_cliente.js"></script>
 </body>
 </html>
