@@ -169,7 +169,10 @@ slide2-
 
 #avaliacoes {
   background-color: var(--color-secondary);
-  
+  min-height: 775px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -231,6 +234,45 @@ article button, article button img {
   height: 32px;
   background-color: black;
   margin: 0;
+}
+
+#av-card:has(#prev:focus) {
+  animation: left 0.8s ease 0s 1 normal forwards;
+}
+
+#av-card:has(#next:focus) {
+  animation: right 0.8s ease 0s 1 normal forwards;
+}
+
+
+@keyframes left {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(-20px);
+	}
+
+  100% {
+		transform: translateX(0);
+	}
+
+}
+
+@keyframes right {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(20px);
+	}
+
+  100% {
+		transform: translateX(0);
+	}
+
 }
 
 @media (min-width: 737px) {

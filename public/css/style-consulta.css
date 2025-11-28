@@ -40,7 +40,7 @@ label {
     color: #555;
 }
 
-input, select,  form button {
+input, select,  form button, form textarea {
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;

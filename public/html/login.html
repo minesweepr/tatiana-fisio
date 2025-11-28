@@ -47,8 +47,10 @@
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
+                <div id="campo-senha">
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <i id="toggleSenha" class="fa-solid fa-eye-slash"></i>
+                </div>
                 <button type="submit">Entrar</button>
 
                 
@@ -89,11 +91,23 @@
         <p style="opacity: 60%; text-align: center;">© 2025 Tatiana Fernandes. All rights reserved.</p>
     </footer>
 
+    <script>
+        document.getElementById('toggleSenha').addEventListener('click', function() {
+            const campo = document.getElementById('senha');
+
+            if (campo.type === "password") {
+                campo.type = "text";
+                this.classList.replace("fa-eye-slash", "fa-eye");
+            } else {
+                campo.type = "password";
+                this.classList.replace("fa-eye", "fa-eye-slash");
+            }
+        });
+    </script>
     
     <script src="../js/client-menu.js"></script>
     <script src="../js/insta.js"></script>
 
-  
     <script src="../js/login.js"></script>
 
 </body>

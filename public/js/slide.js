@@ -96,7 +96,6 @@ function iniciarSlideShow(sliderShow, dotsContainer, slideIndice) {
         // return -indice * passo;
 
          const total = slideImg.length;
-         console.log(total + " slide length img")
         if (visivel >=4) {
             return 0
         } else if (visivel === 3) {

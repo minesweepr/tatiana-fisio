@@ -56,12 +56,38 @@ form button {
     border-radius: 4px;
 }
 
-#recuperarSenha {
+#campo-senha {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0;            /* sem padding */
+    gap: 0;                /* gap 0 */
+    height: 45px;
+    max-width: 100%;
+}
+
+#campo-senha input {
+    width: 90%;
+    border: none;
+    outline: none;
+    background: #fff;
+    margin: 0;
+    height: 100%;
     font-size: 1rem;
-    text-align: right;
-    text-decoration: underline;
-    font-weight: 600;
-    padding-top: 25px;
+}
+
+#campo-senha i {
+    width: auto;           /* só o tamanho real do ícone */
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #555;
 }
 
 

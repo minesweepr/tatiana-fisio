@@ -60,6 +60,10 @@ h2 {
 
 }
 
+button {
+  cursor: pointer !important;
+}
+
 button, a {
   border-radius: 30px;
   border: none;
